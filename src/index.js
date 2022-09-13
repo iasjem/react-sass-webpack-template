@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import './index.css';
+import { createRoot } from "react-dom/client";
+import { App } from "./components/App";
 
-const App = () => {
-  return <div>
-      <h1>Hello World!</h1>
-  </div>
+import './index.scss';
+
+const Index = () => {
+  return <App />
 };
 
-ReactDOM.render(<App />, document.getElementById("app"));
+createRoot(document.getElementById("app")).render(<Index />);
